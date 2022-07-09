@@ -2,14 +2,17 @@
     margin: 0;    
     padding:0;
    box-sizing: border-box;  
-   
-   }a{
+}
+ 
+
+body 
+   a{
        text-decoration: none;
    }
    .user{
        font-weight: 480;
        font-family: sans-serif;
-       color: #00082F;
+       
        opacity: 0.8;
    }
    ul{
@@ -22,9 +25,14 @@
    html.sr .losd-hidden {
        visibility: hidden;
    }
+   body.dark {
+    --bg-color: #00082F;
+    --text---color: #FFFFFF;
+   }
    body{
        font-family: 'roboto', sans-serif;
-    background: #EDF2FF; 
+       background: var(--bg-color);
+       color: var(--text---color);
     transition: all ease-in-out 0.6s;  
    }
    ul li a {
@@ -58,7 +66,7 @@
       
    h1 {
        font-size: 32px;
-       color: #00082F;
+      
    margin-top: 24px;  
    margin-bottom: 8px;  
    }
@@ -84,7 +92,6 @@
    footer {
      font-weight: 500; 
      font-size: 12px; 
-     color:#00082F;
      opacity: 0.6;
    transition: background 480ms;
    margin-top: 15px;
@@ -93,6 +100,6 @@
        opacity: 1;
    }
    footer a{
-      color:#00082F;
+      color: var(--text-color);
    
    }
